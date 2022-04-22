@@ -10,33 +10,34 @@ $grass-color: #109d8b;
 
 // mixins
 @mixin center {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 }
 
 @mixin pseudo($position: absolute, $content: "") {
-    content: $content;
-    position: $position;
+  content: $content;
+  position: $position;
 }
 
-html, body{
+html,
+body {
   width: 100%;
   height: 100%;
 }
 
-body{
+body {
   background: $bg-color;
   overflow: hidden;
 }
 
-.unicorn{
+.unicorn {
   @include center;
 
-  .horn{
+  .horn {
     @include center;
     z-index: 2;
     top: -58vmin;
@@ -49,7 +50,7 @@ body{
     transform: rotate(-45deg);
   }
 
-  .ear{
+  .ear {
     @include center;
     top: -58vmin;
     left: -22vmin;
@@ -59,7 +60,7 @@ body{
     border-radius: 90% 0;
     transform: rotate(-60deg);
 
-    &:before{
+    &:before {
       @include pseudo;
       top: 1.8vmin;
       left: 1.3vmin;
@@ -71,7 +72,7 @@ body{
     }
   }
 
-  .head{
+  .head {
     @include center;
     top: -44.3vmin;
     left: -23.8vmin;
@@ -80,7 +81,7 @@ body{
     background: $unicorn-color;
     transform: rotate(-45deg);
 
-    &:before{
+    &:before {
       @include pseudo;
       top: 2.7vmin;
       width: 12vmin;
@@ -89,7 +90,7 @@ body{
       transform: rotate(25deg);
     }
 
-    &:after{
+    &:after {
       @include pseudo;
       top: -0.2vmin;
       left: 7.5vmin;
@@ -102,7 +103,7 @@ body{
       border-bottom-left-radius: 1vmin;
     }
 
-    .eye{
+    .eye {
       @include center;
       z-index: 2;
       top: 1.9vmin;
@@ -115,41 +116,21 @@ body{
       border-bottom: none;
       background: transparent;
       transform: rotate(-135deg);
-
-      &:before{
-        @include pseudo;
-        top: 0.9vmin;
-        left: 2.2vmin;
-        width: 0.4vmin;
-        height: 0.5vmin;
-        border-bottom-right-radius: 50%;
-        border-bottom-left-radius: 50%;
-        background: $eye-color;
-      }
-      &:after{
-        @include pseudo;
-        top: 0.9vmin;
-        left: -0.4vmin;
-        width: 0.4vmin;
-        height: 0.5vmin;
-        border-bottom-right-radius: 50%;
-        border-bottom-left-radius: 50%;
-        background: $eye-color;
-      }
     }
 
-    .eye-2{
+    .eye-2 {
       @include center;
       z-index: 2;
       top: 1vmin;
-      left: 6.45vmin;
-      width: 2.1vmin;
+      left: 6.1vmin;
+      width: 2.2vmin;
       height: 0.5vmin;
       background: $unicorn-color;
       transform: rotate(-135deg);
+      border-radius: 0.1vmin;
     }
   }
-  .mouth{
+  .mouth {
     @include center;
     top: -34.8vmin;
     left: -31vmin;
@@ -157,7 +138,7 @@ body{
     height: 4.35vmin;
     background: $unicorn-color;
 
-    .grass-left{
+    .grass-left {
       @include pseudo;
       top: 4.3vmin;
       left: -0.8vmin;
@@ -168,7 +149,7 @@ body{
       border-top-right-radius: 3vmin;
       transform: rotate(90deg);
 
-      &:after{
+      &:after {
         @include pseudo;
         top: 0.65vmin;
         left: 0.15vmin;
@@ -178,7 +159,7 @@ body{
         border-top-right-radius: 3vmin;
       }
     }
-    .grass-right{
+    .grass-right {
       @include pseudo;
       top: 4.4vmin;
       left: 1.6vmin;
@@ -189,7 +170,7 @@ body{
       border-bottom-right-radius: 3vmin;
       transform: rotate(90deg);
 
-      &:after{
+      &:after {
         @include pseudo;
         top: -0.5vmin;
         left: 0.3vmin;
@@ -200,7 +181,7 @@ body{
       }
     }
   }
-  .body{
+  .body {
     @include center;
     top: -10.8vmin;
     left: -1.9vmin;
@@ -211,7 +192,7 @@ body{
     background: $unicorn-color;
     transform: rotate(15deg);
 
-    &:before{
+    &:before {
       @include pseudo;
       top: -5vmin;
       left: 2.7vmin;
@@ -222,7 +203,7 @@ body{
       transform: rotate(-24deg);
     }
 
-    &:after{
+    &:after {
       @include pseudo;
       top: 5vmin;
       left: 10.6vmin;
@@ -234,7 +215,7 @@ body{
       transform: rotate(-25deg);
     }
   }
-  .body-2{
+  .body-2 {
     @include center;
     top: -29vmin;
     left: 12vmin;
@@ -242,7 +223,7 @@ body{
     height: 9vmin;
     background: $bg-color;
 
-    &:before{
+    &:before {
       @include pseudo;
       top: -4.5vmin;
       left: -4.7vmin;
@@ -253,7 +234,7 @@ body{
       transform: rotate(4deg);
     }
 
-    &:after{
+    &:after {
       @include pseudo;
       top: 11.7vmin;
       left: 9.6vmin;
@@ -263,7 +244,7 @@ body{
       transform: rotate(46deg);
     }
   }
-  .body-3{
+  .body-3 {
     @include center;
     top: -0.8vmin;
     left: 25.79vmin;
@@ -272,7 +253,7 @@ body{
     background: $unicorn-color;
     transform: rotate(20deg);
 
-    &:before{
+    &:before {
       @include pseudo;
       left: -14vmin;
       top: 9.5vmin;
@@ -283,7 +264,7 @@ body{
       transform: rotate(70deg);
     }
 
-    &:after{
+    &:after {
       @include pseudo;
       top: 5.5vmin;
       left: 0.3vmin;
@@ -294,7 +275,7 @@ body{
       transform: rotate(-53deg);
     }
   }
-  .tail{
+  .tail {
     @include center;
     z-index: -1;
     top: -9vmin;
@@ -305,7 +286,7 @@ body{
     border-top-right-radius: 6.4vmin;
     border-top-left-radius: 4.4vmin;
 
-    &:before{
+    &:before {
       @include pseudo;
       top: 1.44vmin;
       left: 0.6vmin;
@@ -317,7 +298,7 @@ body{
       border-bottom-right-radius: 1.6vmin;
       transform: rotate(-10deg);
     }
-    &:after{
+    &:after {
       @include pseudo;
       top: 5.6vmin;
       left: 2.5vmin;
@@ -327,14 +308,14 @@ body{
       transform: rotate(-8deg);
     }
   }
-  .leg{
+  .leg {
     width: 0;
     height: 0;
     border-top: 16.5vmin solid $unicorn-color;
     border-left: 3vmin solid transparent;
     border-right: 3vmin solid transparent;
 
-    &:after{
+    &:after {
       @include pseudo;
       left: -1.7vmin;
       top: -0.15vmin;
@@ -345,13 +326,13 @@ body{
       border-right: 1.65vmin solid transparent;
     }
   }
-  .leg-left{
+  .leg-left {
     @include center;
     top: 26.5vmin;
     left: -12.9vmin;
     @extend .leg;
   }
-  .leg-right{
+  .leg-right {
     @include center;
     top: 27.5vmin;
     left: 27.8vmin;
@@ -360,7 +341,7 @@ body{
   }
 }
 
-.base{
+.base {
   @include center;
   z-index: -1;
   top: 53.5vmin;
@@ -371,7 +352,7 @@ body{
   background: $base-color;
 }
 
-.grass-container{
+.grass-container {
   @include center;
   // z-index: -1;
   top: 53.5vmin;
@@ -381,8 +362,8 @@ body{
   border-radius: 3vmin;
   background: $base-color;
 
-  .grass-1{
-    .grass-right{
+  .grass-1 {
+    .grass-right {
       @include pseudo;
       // z-index: 1;
       top: -3.7vmin;
@@ -394,7 +375,7 @@ body{
       border-bottom-left-radius: 10vmin;
       transform: rotate(90deg);
 
-      &:after{
+      &:after {
         @include pseudo;
         top: -1.2vmin;
         left: -0.2vmin;
@@ -405,7 +386,7 @@ body{
         // transform: rotate(-10deg);
       }
     }
-    .grass-left{
+    .grass-left {
       @include pseudo;
       top: -1.4vmin;
       left: 4.15vmin;
@@ -416,7 +397,7 @@ body{
       border-top-left-radius: 3vmin;
       transform: rotate(90deg);
 
-      &:after{
+      &:after {
         @include pseudo;
         top: 0.5vmin;
         left: -0.1vmin;
@@ -428,8 +409,8 @@ body{
     }
   }
 
-  .grass-2{
-    .grass-right{
+  .grass-2 {
+    .grass-right {
       @include pseudo;
       // z-index: 1;
       top: -2vmin;
@@ -441,7 +422,7 @@ body{
       border-bottom-left-radius: 2vmin;
       transform: rotate(60deg);
 
-      &:after{
+      &:after {
         @include pseudo;
         top: -0.1vmin;
         left: -0.1vmin;
@@ -451,7 +432,7 @@ body{
         border-bottom-left-radius: 10vmin;
       }
     }
-    .grass-left{
+    .grass-left {
       @include pseudo;
       top: -1.9vmin;
       z-index: -1;
@@ -461,7 +442,7 @@ body{
       border-top-left-radius: 4vmin;
       transform: rotate(90deg);
 
-      &:after{
+      &:after {
         @include pseudo;
         top: 0.5vmin;
         left: -0.1vmin;
