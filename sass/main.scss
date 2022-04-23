@@ -24,8 +24,8 @@ body {
     margin: auto;
     box-sizing: border-box;
 
-    &::before,
-    &::after {
+    &:before,
+    &:after {
       content: "";
       position: absolute;
     }
@@ -100,7 +100,6 @@ body {
   border: 0.4vmin solid $eye-color;
   border-top: 0;
   border-radius: 0 0 10vmin 10vmin;
-  transform: rotate(0deg);
 }
 
 .mouth {
@@ -262,6 +261,7 @@ body {
     border-radius: 3.6vmin 10vmin 1.6vmin 0;
     transform: rotate(-10deg);
   }
+
   &::after {
     width: 10vmin;
     height: 5vmin;
@@ -334,13 +334,12 @@ body {
       border-radius: 0 0 0 10vmin;
       transform: rotate(90deg);
 
-      &::after {
+      &::before {
         width: 4.2vmin;
         height: 4vmin;
         background: $bg-color;
         top: -1.2vmin;
         left: -0.2vmin;
-        border-bottom-left-radius: 10vmin;
         border-radius: 0 0 0 10vmin;
       }
     }
@@ -355,7 +354,7 @@ body {
       border-radius: 3vmin 0 0 0;
       transform: rotate(90deg);
 
-      &::after {
+      &::before {
         width: 2.5vmin;
         height: 1.5vmin;
         background: $bg-color;
@@ -377,7 +376,7 @@ body {
       border-radius: 0 0 0 2vmin;
       transform: rotate(60deg);
 
-      &::after {
+      &::before {
         width: 2.3vmin;
         height: 2vmin;
         background: $bg-color;
@@ -397,7 +396,7 @@ body {
       border-radius: 4vmin 0 0 0;
       transform: rotate(90deg);
 
-      &::after {
+      &::before {
         width: 3vmin;
         height: 1.5vmin;
         background: $bg-color;
